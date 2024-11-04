@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Azaya Beach Hotel - Booking Manager</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            animation: fadeIn 1s;
+        }
+
+        .info-section {
+            background: #e74c3c;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            animation: slideInLeft 1s;
+        }
+
+        .info-section h2 {
+            margin-bottom: 10px;
+        }
+
+        .info-section p {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+
+        .room-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            animation: slideInRight 1s;
+        }
+
+        .room-header {
+            background: #3498db;
+            color: white;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .guest-list {
+            margin: 10px 0;
+        }
+
+        .guest {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            margin: 2px;
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideInLeft {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes slideInRight {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Azaya Beach Hotel - Booking Manager</h1>
+    </div>
+
+    <div class="info-section">
+        <h2>🚤 Speed Launch Information</h2>
+        <p><strong>Boat Name:</strong> River Speed</p>
+        <p><strong>Departure (10th November):</strong></p>
+        <p>Meeting Point: In front of Bank of Ceylon (BOC)</p>
+        <p>Meeting Time: 9:20 AM</p>
+        <p><strong>Return (11th November):</strong></p>
+        <p>First Departure: 5:00 PM</p>
+        <p>Second Departure: 5:30 PM</p>
+    </div>
+
+    <div class="room-card">
+        <div class="room-header">
+            <h3>Room 1 - Deluxe Room</h3>
+        </div>
+        <div class="guest-list">
+            <h4>Adults:</h4>
+            <span class="guest">Nishan</span>
+            <span class="guest">Shau</span>
+        </div>
+        <div class="guest-list">
+            <h4>Children 5+ years:</h4>
+            <span class="guest">Hud</span>
+        </div>
+        <div class="guest-list">
+            <h4>Children under 5:</h4>
+            <span class="guest">Liya</span>
+            <span class="guest">Lyn</span>
+        </div>
+    </div>
+
+    <div class="room-card">
+        <div class="room-header">
+            <h3>Room 2 - Deluxe Room</h3>
+        </div>
+        <div class="guest-list">
+            <h4>Adults:</h4>
+            <span class="guest">Mom</span>
+            <span class="guest">Shaafee</span>
+            <span class="guest">Jeeko</span>
+        </div>
+        <div class="guest-list">
+            <h4>Children under 5:</h4>
+            <span class="guest">Ilana</span>
+        </div>
+    </div>
+
+    <div class="room-card">
+        <div class="room-header">
+            <h3>Room 3 - Standard Room</h3>
+        </div>
+        <div class="guest-list">
+            <h4>Adults:</h4>
+            <span class="guest">Eysha</span>
+            <span class="guest">Eyshal</span>
+            <span class="guest">Faxtha</span>
+        </div>
+        <div class="guest-list">
+            <h4>Children 5+ years:</h4>
+            <span class="guest">Eyshaal</span>
+        </div>
+    </div>
+
+    <div class="room-card">
+        <div class="room-header">
+            <h3>Room 4 - Standard Room</h3>
+        </div>
+        <div class="guest-list">
+            <h4>Adults:</h4>
+            <span class="guest">Kudabe</span>
+            <span class="guest">Kudabe Dhatha</span>
+            <span class="guest">Shama</span>
+        </div>
+        <div class="guest-list">
+            <h4>Children 5+ years:</h4>
+            <span class="guest">Shain</span>
+        </div>
+    </div>
+
+    <div class="room-card">
+        <div class="room-header">
+            <h3>Room 5 - Standard Room</h3>
+        </div>
+        <div class="guest-list">
+            <h4>Adults:</h4>
+            <span class="guest">Thitha</span>
+            <span class="guest">Maama</span>
+        </div>
+        <div class="guest-list">
+            <h4>Children 5+ years:</h4>
+            <span class="guest">Shiu</span>
+        </div>
+    </div>
+
+    <div class="room-card">
+        <div class="room-header">
+            <h3>Room 6 - Deluxe Room</h3>
+        </div>
+        <div class="guest-list">
+            <h4>Adults:</h4>
+            <span class="guest">Dhontha</span>
+            <span class="guest">Neely</span>
+            <span class="guest">Nafu</span>
+        </div>
+        <div class="guest-list">
+            <h4>Children 5+ years:</h4>
+            <span class="guest">Laith</span>
+        </div>
+        <div class="guest-list">
+            <h4>Children under 5:</h4>
+            <span class="guest">Laira</span>
+        </div>
+    </div>
+
+    <div class="room-card">
+        <div class="room-header">
+            <h3>Room 7 - Standard Room</h3>
+        </div>
+        <div class="guest-list">
+            <h4>Adults:</h4>
+            <span class="guest">Shafa</span>
+            <span class="guest">Haisham</span>
+        </div>
+        <div class="guest-list">
+            <h4>Children under 5:</h4>
+            <span class="guest">Zaul</span>
+            <span class="guest">Zuke</span>
+        </div>
+    </div>
+
+    <div class="room-card">
+        <div class="room-header">
+            <h3>Room 8 - Standard Room</h3>
+        </div>
+        <div class="guest-list">
+            <h4>Adults:</h4>
+            <span class="guest">Saba</span>
+            <span class="guest">Thutha</span>
+        </div>
+    </div>
+
+</body>
+</html>
